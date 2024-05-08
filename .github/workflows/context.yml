@@ -1,0 +1,8 @@
+name: Context workflow
+on: [workflow_dispatch]
+jobs:
+    GitHub_Context_Job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: GitHub Context Step
+              run: echo "${{github}}"
